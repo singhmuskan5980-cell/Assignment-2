@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Reverse of a number</h1>
+</head>
+<body>
+    <script>
+        function reverseNumber(num) {
+  const isNegative = num < 0; // Check for negative numbers
+  const numString = Math.abs(num).toString(); // Convert absolute value to string
+  const reversedString = numString.split('').reverse().join('');
+  const reversedNum = Number(reversedString);
+
+  return isNegative ? -reversedNum : reversedNum; // Apply negative sign if original was negative
+}
+
+console.log(reverseNumber(123));   // Output: 321
+console.log(reverseNumber(-456));  // Output: -654
+console.log(reverseNumber(700));   // Output: 7
+    </script>
+</body>
+</html>

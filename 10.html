@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Check Whether A Year Is  Leap Year Or Not</h1>
+</head>
+<body>
+    <script>
+        function isLeapYear(year) {
+  // A year is a leap year if it is divisible by 4,
+  // unless it is divisible by 100 but not by 400.
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Example usage:
+let year1 = 2024;
+let year2 = 1900;
+let year3 = 2000;
+let year4 = 2023;
+
+console.log(`${year1} is a leap year: ${isLeapYear(year1)}`); // Expected: true
+console.log(`${year2} is a leap year: ${isLeapYear(year2)}`); // Expected: false
+console.log(`${year3} is a leap year: ${isLeapYear(year3)}`); // Expected: true
+console.log(`${year4} is a leap year: ${isLeapYear(year4)}`); // Expected: false
+
+// You can also get input from the user:
+// let inputYear = prompt("Enter a year:");
+// let parsedYear = parseInt(inputYear);
+// if (!isNaN(parsedYear)) {
+//   console.log(`${parsedYear} is a leap year: ${isLeapYear(parsedYear)}`);
+// } else {
+//   console.log("Invalid input. Please enter a valid year.");
+// }
+    </script>
+</body>
+</html>

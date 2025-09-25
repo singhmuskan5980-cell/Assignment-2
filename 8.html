@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Print The Multiplication table of a given number</h1>
+</head>
+<body>
+    <script>
+        function printMultiplicationTable(number, limit = 10) {
+  console.log(`Multiplication Table for ${number}:`);
+  for (let i = 1; i <= limit; i++) {
+    const result = number * i;
+    console.log(`${number} x ${i} = ${result}`);
+  }
+}
+
+// Example usage:
+printMultiplicationTable(5); // Prints the multiplication table of 5 up to 10
+console.log("\n"); // Add a newline for better readability
+
+printMultiplicationTable(7, 12); // Prints the multiplication table of 7 up to 12
+    </script>
+</body>
+</html>

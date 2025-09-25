@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Number Is Even Or Odd</h1>
+</head>
+<body>
+    <script>
+        function checkEvenOrOdd(number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
+
+// Example usage:
+let num1 = 10;
+let num2 = 7;
+let num3 = 0;
+
+console.log(`${num1} is ${checkEvenOrOdd(num1)}.`); // Output: 10 is Even.
+console.log(`${num2} is ${checkEvenOrOdd(num2)}.`); // Output: 7 is Odd.
+console.log(`${num3} is ${checkEvenOrOdd(num3)}.`); // Output: 0 is Even.
+
+// To get user input in a browser environment:
+// let userInput = prompt("Enter a number:");
+// let userNumber = parseInt(userInput, 10); // Convert string input to an integer
+// if (!isNaN(userNumber)) { // Check if the input is a valid number
+//   console.log(`${userNumber} is ${checkEvenOrOdd(userNumber)}.`);
+// } else {
+//   console.log("Invalid input. Please enter a number.");
+// }
+    </script>
+</body>
+</html>!

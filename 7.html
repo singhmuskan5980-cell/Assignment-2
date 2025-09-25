@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Factorial of a number using a loop</h1>
+</head>
+<body>
+<script>
+    function calculateFactorial(number) {
+  // Handle edge cases: factorial of 0 and 1 is 1
+  if (number === 0 || number === 1) {
+    return 1;
+  }
+
+  // Handle negative numbers: factorial is not defined for negative numbers
+  if (number < 0) {
+    return "Factorial is not defined for negative numbers.";
+  }
+
+  let factorial = 1; // Initialize factorial to 1
+s
+  // Loop from 2 up to the given number
+  for (let i = 2; i <= number; i++) {
+    factorial *= i; // Multiply factorial by the current number in the loop
+  }
+
+  return factorial;
+}
+
+// Example usage:
+let num1 = 5;
+let result1 = calculateFactorial(num1);
+console.log(`The factorial of ${num1} is: ${result1}`); // Output: The factorial of 5 is: 120
+
+let num2 = 0;
+let result2 = calculateFactorial(num2);
+console.log(`The factorial of ${num2} is: ${result2}`); // Output: The factorial of 0 is: 1
+
+let num3 = -3;
+let result3 = calculateFactorial(num3);
+console.log(`The factorial of ${num3} is: ${result3}`); // Output: The factorial of -3 is: Factorial is not defined for negative numbers.
+</script>
+
+        
+</body>
+</html>

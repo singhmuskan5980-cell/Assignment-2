@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Square Of A Number</h1>
+</head>
+<body>
+    <script>// Function to calculate the square of a number
+function calculateSquare(number) {
+  return number * number;
+}
+
+// Example usage:
+const num1 = 5;
+const square1 = calculateSquare(num1);
+console.log(`The square of ${num1} is: ${square1}`); // Output: The square of 5 is: 25
+
+const num2 = 12.5;
+const square2 = calculateSquare(num2);
+console.log(`The square of ${num2} is: ${square2}`); // Output: The square of 12.5 is: 156.25
+
+// You can also use the Math.pow() method for squaring
+const num3 = 7;
+const square3 = Math.pow(num3, 2);
+console.log(`Using Math.pow(), the square of ${num3} is: ${square3}`); // Output: Using Math.pow(), the square of 7 is: 49
+
+// Or the exponentiation operator (**)
+const num4 = 9;
+const square4 = num4 ** 2;
+console.log(`Using the exponentiation operator, the square of ${num4} is: ${square4}`); // Output: Using the exponentiation operator, the square of 9 is: 81</script>
+</body>
+</html>
